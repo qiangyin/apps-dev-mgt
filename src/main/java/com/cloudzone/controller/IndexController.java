@@ -126,4 +126,19 @@ public class IndexController {
     public String share() {
         return "share";
     }
+
+    @RequestMapping("/add_user")
+    public String addUser() {
+        return "add_user";
+    }
+
+    @RequestMapping("/add_activity")
+    public String addActivity() {
+        return "add_activity";
+    }
+
+    @RequestMapping("/add_temp")
+    public String addTemp() {
+        return "add_temp";
+    }
 }
