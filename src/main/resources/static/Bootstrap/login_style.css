@@ -1,0 +1,185 @@
+.navbar {
+    position: relative;
+    min-height: 80px;
+    border-bottom: 1px solid #e8e8e8;
+}
+.logo-title {
+    display: inline-block;
+    width: auto;
+    height: 30px;
+    line-height: 33px;
+    font-size: 20px;
+    font-weight: normal;
+    color: #9d9d9d;
+}
+
+.content {
+    padding-top: 80px;;
+}
+/*轮播图位置*/
+.cont-left {
+    width: 700px;
+    height: 377px;
+    float: left;
+    margin-top: 15px;
+    padding-top: 20px;
+    margin-left: 30px;
+}
+
+.cont-right {
+    float: left;
+    width: 290px;
+    height: 390px;
+    border: 1px solid #D4D4D4;
+}
+
+.page-header {
+    padding-bottom: 9px;
+    margin: 40px 0 20px;
+    /* border-bottom: 1px solid #eee; */
+}
+
+
+.subStyle {
+    width: 250px;
+    height: 44px;
+    background: #33b5d4;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    font-family: MicroSoft YaHei;
+    margin-left: 18px;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+.inputStyle {
+    width: 240px;
+    border: 1px solid #e3e3e3;
+    height: 36px;
+    line-height: 26px;
+    color: #999;
+    outline: none;
+    vertical-align: middle;
+    padding: 5px 0;
+    padding-left: 45px;
+    font-size: 14px;
+    border-radius: 5px;
+    margin-left: 23px;
+    display: inherit;
+}
+
+.fool-right{
+    margin-right: 20px;
+    float: right;
+    color: #999999;
+}
+
+
+
+.new {
+    margin-top: -15px;
+    margin-left: 3px;
+}
+
+.foot_e{
+    width: 100px;
+    height: 30px;
+
+}
+
+.nav>li>a:hover {
+    text-decoration: none;
+    color: red;
+
+}
+/*用户名图标*/
+.userIcon {
+    position: absolute;
+    height: 33px;
+    width: 42px;
+    left: 24px;
+    top: 2px;
+    background: #fff url("../images/login_icon.gif") no-repeat 11px 10px;
+}
+/*密码图标*/
+.pwdIcon {
+    position: absolute;
+    height: 33px;
+    width: 42px;
+    left: 24px;
+    top :78px;
+    background: #fff url("../images/login_icon.gif") no-repeat 11px -31px;
+
+}
+
+.mark-margin{
+    margin-bottom: 40px;
+}
+
+.panel-green {
+    border-color: #5cb85c;
+}
+
+.panel-green .panel-heading {
+    border-color: #5cb85c;
+    color: #fff;
+    background-color: #5cb85c;
+}
+.panel-red {
+    border-color: #d9534f;
+}
+
+.panel-red .panel-heading {
+    border-color: #d9534f;
+    color: #fff;
+    background-color: #d9534f;
+}
+
+.huge {
+    font-size: 30px;
+}
+
+.div_center {
+    margin-top: 25px;
+    padding-top: 40px;
+    min-width: 500px;
+    min-height: 368px;
+    border: 1px solid #eee;
+    margin-bottom: 9px;
+    padding-left: 50px;
+}
+
+/*进入后图标样式*/
+.UserIcon{
+
+    margin-top: 10px;
+    display: inline-block;
+
+}
+
+.sso-div-hidden {
+    display: none !important;
+}
+
+/*错误提示*/
+.error_login {
+    margin-left: 25px;
+    width: 231px;
+    padding-left: 13px;
+    height: 24px;
+    border: 1px solid #f7d0d4;
+    background-color: #ffebec;
+    color: red;
+    font-size: 12px;
+    line-height: 25px;
+    margin-bottom: 15px;
+}
+
+
+.error_login img {
+    margin-top:2px;
+    margin-right:9px;
+    vertical-align:-4px;
+}

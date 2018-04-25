@@ -1,0 +1,58 @@
+{
+  "name": "主体框架",
+  "children": [
+    {
+      "name": "小程序(apps-dev-mgt)",
+      "children": [
+        {
+          "name": "main(源码)",
+          "children": [
+            {
+              "name": "java(后台java代码)",
+              "children": [
+                {
+                  "name": "common(公共包,entity,utils,常量)"
+                },
+                {
+                  "name": "controller(控制器)"
+                },
+                {
+                  "name": "mapper(数据库操作接口)"
+                },
+                {
+                  "name": "service(业务逻辑层)"
+                },
+                {
+                  "name": "Application(引用启动入口)"
+                }
+              ]
+            },
+            {
+              "name": "resources",
+              "children": [
+                {
+                  "name": "mapping(数据库操作SQL包)"
+                },
+                {
+                  "name": "static.Bootstrap(前端JS和CSS引用包)"
+                },
+                {
+                  "name": "views(前端页面包)"
+                },
+                {
+                  "name": "application.properties(项目配置)"
+                },
+                {
+                  "name": "log4j2.xml(日志配置)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "test(单元测试)"
+        }
+      ]
+    }
+  ]
+}

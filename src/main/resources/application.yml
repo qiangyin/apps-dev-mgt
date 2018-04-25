@@ -1,0 +1,32 @@
+
+spring:
+  application:
+    name: apps-dev-aux
+  datasource:
+    name: apps_dev_aux
+    url: jdbc:mysql://127.0.0.1:3306/apps_dev_mgt?characterEncoding=utf8&useSSL=false&autoReconnect=true&failOverReadOnly=false
+    username: root
+    password: 123456
+    # 使用druid数据源
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.jdbc.Driver
+    filters: stat
+    maxActive: 20
+    initialSize: 1
+    maxWait: 60000
+    minIdle: 1
+    timeBetweenEvictionRunsMillis: 60000
+    minEvictableIdleTimeMillis: 300000
+    validationQuery: select 'x'
+    testWhileIdle: true
+    testOnBorrow: false
+    testOnReturn: false
+    poolPreparedStatements: true
+    maxOpenPreparedStatements: 20
+
+logging:
+  path: /var/logs/gc_cloud
+  file: /var/logs/gc_cloud/console.log
+mybatis:
+  mapper-locations: classpath:mapping/*.xml
+  type-aliases-package: com.cloudozne.common.entity

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>小程序研发技术管理系统</title>
+    <!--Bootstrap-->
+    <link th:href="@{Bootstrap/bootstrap/css/bootstrap.min.css}" rel="stylesheet"/>
+    <!-- Font Awesome -->
+    <link th:href="@{Bootstrap/font-awesome/css/font-awesome.min.css}" rel="stylesheet"/>
+    <!--[if IE 7]>
+    <link href="/Content/font-awesome/css/font-awesome-ie7.min.css" rel="stylesheet"/>
+    <![endif]-->
+    <link th:href="@{Bootstrap/sidebar-menu/sidebar-menu.css}" rel="stylesheet"/>
+    <link th:href="@{Bootstrap/ace/css/ace-rtl.min.css}" rel="stylesheet"/>
+    <link th:href="@{Bootstrap/ace/css/ace-skins.min.css}" rel="stylesheet"/>
+    <link th:href="@{Bootstrap/toastr/toastr.min.css}" rel="stylesheet"/>
+
+    <script th:src="@{Bootstrap/jquery-1.9.1.min.js}"></script>
+    <script th:src="@{Bootstrap/bootstrap/js/bootstrap.min.js}"></script>
+    <script th:src="@{Bootstrap/sidebar-menu/sidebar-menu.js}"></script>
+    <script th:src="@{Bootstrap/bootstrap/js/bootstrap-tab.js}"></script>
+    <!--[if lt IE 9]>
+    <script src="/Scripts/html5shiv.js"></script>
+    <script src="/Scripts/respond.min.js"></script>
+    <![endif]-->
+    <style type="text/css">
+        body {
+            font-size: 12px;
+        }
+
+        .nav > li > a {
+            padding: 5px 10px;
+        }
+
+        .tab-content {
+            padding-top: 3px;
+        }
+    </style>
+</head>
+<body>
+<div class="panel panel-default">
+    <!-- Table -->
+    <table class="table">
+        <tr>
+            <th>序号</th>
+            <th>名称</th>
+            <th>类型</th>
+            <th>平台</th>
+            <th>功能简介</th>
+            <th>联系电话</th>
+            <th>体验地址</th>
+            <th>状态</th>
+            <th>操作</th>
+        </tr>
+        <tr>
+            <td class="active">1</td>
+            <td class="active">欢乐跳跳跳</td>
+            <td class="active">小游戏</td>
+            <td class="active">Android</td>
+            <td class="active">通过按钮控制人物在规定区域内弹跳获取积分</td>
+            <td class="active">0825-4894914</td>
+            <td class="active">www.happyjump.com</td>
+            <td class="active">正常</td>
+            <td class="active">
+                <button class="btn btn-sm btn-success" type="button">编辑</button>
+                <button class="btn btn-sm btn-info" type="button">启用</button>
+                <button class="btn btn-sm btn-warning" type="button">停用</button>
+                <button class="btn btn-sm btn-danger" type="button">删除</button>
+            </td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>活动表单生成器</td>
+            <td>办公</td>
+            <td>Android</td>
+            <td>生产能填写预约、问卷调查、信息登记等信息的表单</td>
+            <td>0825-2343316</td>
+            <td>www.idcard.com</td>
+            <td>正常</td>
+            <td>
+                <button class="btn btn-sm btn-success" type="button">编辑</button>
+                <button class="btn btn-sm btn-info" type="button">启用</button>
+                <button class="btn btn-sm btn-warning" type="button">停用</button>
+                <button class="btn btn-sm btn-danger" type="button">删除</button>
+            </td>
+        </tr>
+        <tr>
+            <td class="active">3</td>
+            <td class="active">神车行</td>
+            <td class="active">汽车</td>
+            <td class="active">IOS</td>
+            <td class="active">综合违章查询、车辆查询、加油卡等功能，为车主提供便捷服务</td>
+            <td class="active">0825-4649317</td>
+            <td class="active">www.apple.com</td>
+            <td class="active">正常</td>
+            <td class="active">
+                <button class="btn btn-sm btn-success" type="button">编辑</button>
+                <button class="btn btn-sm btn-info" type="button">启用</button>
+                <button class="btn btn-sm btn-warning" type="button">停用</button>
+                <button class="btn btn-sm btn-danger" type="button">删除</button>
+            </td>
+        </tr>
+    </table>
+</div>
+<script th:src="@{Bootstrap/ace/js/ace-extra.min.js}"></script>
+<script th:src="@{Bootstrap/ace/js/ace.min.js}"></script>
+</body>
+</html>

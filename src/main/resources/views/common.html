@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+>
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>小程序研发技术管理系统</title>
+    <!--Bootstrap-->
+    <link th:href="@{Bootstrap/bootstrap/css/bootstrap.min.css}" rel="stylesheet"/>
+    <style type="text/css">
+        body {
+            font-size: 12px;
+        }
+
+        .nav > li > a {
+            padding: 5px 10px;
+        }
+
+        .tab-content {
+            padding-top: 3px;
+        }
+    </style>
+</head>
+<body>
+<div class="main-container" id="main-container">
+    <div class="main-container-inner">
+
+        <div class="sidebar" id="sidebar">
+            <div class="sidebar-collapse" id="sidebar-collapse" style="display:none;">
+                <i class="icon-double-angle-left" data-icon1="icon-double-angle-left"
+                   data-icon2="icon-double-angle-right"></i>
+            </div>
+            <ul class="nav nav-list" id="menu"></ul>
+
+        </div>
+        <div class="main-content">
+            <div class="page-content">
+                <div class="row">
+                    <div class="col-xs-12" style="padding-left:5px;">
+                        <div class="tab-content" style="height:1000px">
+                            <div role="tabpanel" class="tab-pane active" id="Index" style="height:100%">
+                                <h2>&nbsp;&nbsp;欢迎进入后台管理系统</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+</body>
+</html>

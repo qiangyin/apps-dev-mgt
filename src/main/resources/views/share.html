@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>小程序研发技术管理系统</title>
+    <!--Bootstrap-->
+    <link th:href="@{Bootstrap/bootstrap/css/bootstrap.min.css}" rel="stylesheet"/>
+    <!-- Font Awesome -->
+    <link th:href="@{Bootstrap/font-awesome/css/font-awesome.min.css}" rel="stylesheet"/>
+    <!--[if IE 7]>
+    <link href="/Content/font-awesome/css/font-awesome-ie7.min.css" rel="stylesheet"/>
+    <![endif]-->
+    <link th:href="@{Bootstrap/sidebar-menu/sidebar-menu.css}" rel="stylesheet"/>
+    <link th:href="@{Bootstrap/ace/css/ace-rtl.min.css}" rel="stylesheet"/>
+    <link th:href="@{Bootstrap/ace/css/ace-skins.min.css}" rel="stylesheet"/>
+    <link th:href="@{Bootstrap/toastr/toastr.min.css}" rel="stylesheet"/>
+
+    <script th:src="@{Bootstrap/jquery-1.9.1.min.js}"></script>
+    <script th:src="@{Bootstrap/bootstrap/js/bootstrap.min.js}"></script>
+    <script th:src="@{Bootstrap/sidebar-menu/sidebar-menu.js}"></script>
+    <script th:src="@{Bootstrap/bootstrap/js/bootstrap-tab.js}"></script>
+    <!--[if lt IE 9]>
+    <script src="/Scripts/html5shiv.js"></script>
+    <script src="/Scripts/respond.min.js"></script>
+    <![endif]-->
+    <style type="text/css">
+        body {
+            font-size: 12px;
+        }
+
+        .nav > li > a {
+            padding: 5px 10px;
+        }
+
+        .tab-content {
+            padding-top: 3px;
+        }
+    </style>
+</head>
+<body>
+<div class="content">
+    <br/>
+    <div class="content">
+        <form class="form-inline">
+            <div class="form-group">
+                <label>&nbsp;&nbsp;&nbsp;标题</label>
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" id="title" placeholder=""/>
+            </div>
+            <div class="form-group">
+                <label>&nbsp;&nbsp;&nbsp;类型</label>
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" id="type" placeholder=""/>
+            </div>
+            <div class="form-group">
+                <label>&nbsp;&nbsp;&nbsp;附件</label>
+            </div>
+            <div class="form-group">
+                <input type="file" class="file-input" id="file" placeholder=""/>
+            </div>
+            <div class="form-group">
+                <label>&nbsp;&nbsp;&nbsp;内容</label>
+            </div>
+            <div class="form-group">
+                <textarea type="text" class="form-control" id="content" placeholder=""/>
+            </div>
+            <button type="submit" class="btn btn-default btn-info">分享</button>
+        </form>
+    </div>
+    <br/>
+</div>
+<script th:src="@{Bootstrap/ace/js/ace-extra.min.js}"></script>
+<script th:src="@{Bootstrap/ace/js/ace.min.js}"></script>
+</body>
+</html>
